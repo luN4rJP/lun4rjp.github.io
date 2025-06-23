@@ -61,24 +61,24 @@ footer {
 
 .slider-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 10px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .device-card {
-  min-width: 180px;
+  width: 90%;
+  max-width: 300px;
   background-color: white;
   border-radius: 12px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  scroll-snap-align: start;
-  flex-shrink: 0;
   text-align: center;
+  transition: transform 0.1s ease;
+}
+
+.device-card:hover {
+  transform: perspective(200px) translateZ(10px)
 }
 
 .device-card img {
