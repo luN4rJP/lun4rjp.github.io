@@ -60,10 +60,11 @@ footer {
 }
 
 .slider-container {
-  display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
     gap: 20px;
+    justfy-content: center;
+    padding: 10px;
 }
 
 .device-card {
